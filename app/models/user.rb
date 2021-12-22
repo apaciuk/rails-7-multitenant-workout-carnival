@@ -7,7 +7,7 @@ class User < ApplicationRecord
   has_one_attached :avatar
   has_person_name
 
-   belongs_to_tenant :account
+  #belongs_to_tenant :account
 
   has_many :notifications, as: :recipient
   has_many :services
